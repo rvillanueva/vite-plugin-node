@@ -28,7 +28,8 @@
     "dev": "tsc -w --incremental",
     "lint": "eslint --ext .ts src/**",
     "format": "prettier --write .",
-    "prebuild": "rimraf dist && npm run lint"
+    "prebuild": "rimraf dist && npm run lint",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@rollup/pluginutils": "^4.1.1",
